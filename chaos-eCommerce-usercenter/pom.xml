@@ -1,0 +1,20 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<name>chaos-eCommerce-usercenter</name>
+	<description>a simple eCommerce system</description>
+
+	<parent>
+		<groupId>com.chaosalt.eCommerce</groupId>
+		<artifactId>chaos-eCommerce</artifactId>
+		<version>0.0.1</version>
+	</parent>
+
+	<artifactId>chaos-eCommerce-usercenter</artifactId>
+	<packaging>pom</packaging>
+	<modules>
+		<module>chaos-eCommerce-usercenter-api</module>
+		<module>chaos-eCommerce-usercenter-service</module>
+	</modules>
+</project>
