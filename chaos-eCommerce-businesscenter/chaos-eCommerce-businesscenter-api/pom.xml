@@ -9,4 +9,11 @@
 	</parent>
 	<artifactId>chaos-eCommerce-businesscenter-api</artifactId>
 	<packaging>jar</packaging>
+	
+	<dependencies>
+	<dependency>
+		<groupId>com.chaosalt.eCommerce</groupId>
+		<artifactId>chaos-eCommerce-common</artifactId>
+	</dependency>
+	</dependencies>
 </project>

@@ -108,6 +108,18 @@
 				<artifactId>chaos-eCommerce-businesscenter-api</artifactId>
 				<version>${chaos-eCommerce.verison}</version>
 			</dependency>
+			<!-- swagger -->
+			<dependency>
+				<groupId>io.springfox</groupId>
+				<artifactId>springfox-swagger-ui</artifactId>
+				<version>${springfox.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>io.springfox</groupId>
+				<artifactId>springfox-swagger2</artifactId>
+				<version>${springfox.version}</version>
+			</dependency>
+			<!-- swagger end-->
 		</dependencies>
 	</dependencyManagement>
 
