@@ -20,7 +20,7 @@ public class UsercenterUserQueryFeignClient implements UsercenterUserQueryFeignA
 	@Override
 	public R<String> getUserByUid(String uid) {
 		User record = new User();
-		record.setUid("123");
+		record.setUid("1");
 		List<User> select = userMapper.select(record);
 		return R.isOk().data(select);
 	}

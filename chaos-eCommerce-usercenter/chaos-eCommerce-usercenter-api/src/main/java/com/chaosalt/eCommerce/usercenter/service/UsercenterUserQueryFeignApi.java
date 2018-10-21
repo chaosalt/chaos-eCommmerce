@@ -4,6 +4,7 @@ import org.springframework.cloud.netflix.feign.FeignClient;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.chaosalt.eCommerce.common.base.vo.R;
+import com.chaosalt.eCommerce.usercenter.service.hystrix.UsercenterUserQueryFeignHystrix;
 
 /**
  * 用户信息查询接口
@@ -11,7 +12,7 @@ import com.chaosalt.eCommerce.common.base.vo.R;
  * @author jiang
  *
  */
-@FeignClient(value = "chaos-eCommerce-usercenter")
+@FeignClient(value = "chaos-eCommerce-usercenter", fallback = UsercenterUserQueryFeignHystrix.class)
 public interface UsercenterUserQueryFeignApi {
 
 	/**
@@ -20,6 +21,6 @@ public interface UsercenterUserQueryFeignApi {
 	 * @param uid 用户uid
 	 * @return 用户对象
 	 */
-	@RequestMapping(value = "/hello")
+	@RequestMapping(value = "/users/user")
 	R<String> getUserByUid(String uid);
 }

@@ -7,6 +7,7 @@ import lombok.Data;
 @Data
 @Table(name = "t_user")
 public class User {
+	private Long id;
 	private String uid;
 	private String userName;
 }
