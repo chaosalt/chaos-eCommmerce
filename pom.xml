@@ -12,6 +12,7 @@
 		<module>chaos-eCommerce-businesscenter</module>
 		<module>chaos-eCommerce-usercenter</module>
 		<module>chaos-eCommerce-eureka</module>
+		<module>chaos-eCommerce-zipkn</module>
 	</modules>
 	<packaging>pom</packaging>
 
